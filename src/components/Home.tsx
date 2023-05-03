@@ -3,7 +3,7 @@ import Gallery from './Gallery';
 
 const Home = () => {
   return (
-    <div style={{ padding: '5rem' }}>
+    <div style={{ padding: '2rem' }}>
       <h1>Home</h1>
       <Gallery />
     </div>
