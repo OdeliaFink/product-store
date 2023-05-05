@@ -15,7 +15,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>
-      <Footer />
+      <Footer companyName={''} year={0} />
     </>
   );
 };
