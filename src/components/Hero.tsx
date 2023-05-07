@@ -57,48 +57,22 @@ const HeroCarousel: React.FC = () => {
 // };
 
 const CarouselItem = styled.div`
+  top: 4rem;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100%;
-  max-width: 100vw;
+  text-align: center;
 `;
 
 const CarouselImage = styled.img`
-  max-width: 100vw;
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-`;
-
-const ButtonGroupContainer = styled.div`
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media (min-width: 1024px) {
-    width: 80%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-`;
-
-const Button = styled.button`
-  border: none;
-  background-color: transparent;
-  font-size: 32px;
-  color: #fff;
-  cursor: pointer;
-`;
-
-const ArrowIcon = styled.span`
-  display: inline-block;
-  transform: translateY(-2px);
+  height: 80vh;
+  object-fit: cover;
 `;
 
 export default HeroCarousel;
