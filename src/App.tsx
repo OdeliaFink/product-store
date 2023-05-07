@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <>
+    <div style={{ overflowX: 'hidden' }}>
       <Router>
         <Navbar />
         <Routes>
@@ -16,7 +16,7 @@ const App = () => {
         </Routes>
       </Router>
       <Footer companyName={''} year={0} />
-    </>
+    </div>
   );
 };
 

@@ -37,6 +37,7 @@ const NavLink = styled(Link)`
   color: #fff;
   margin-left: 1rem;
   display: flex;
+  padding-left: 5rem;
 
   @media (max-width: 768px) {
     justify-content: flex-end;
