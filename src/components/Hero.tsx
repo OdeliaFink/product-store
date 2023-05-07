@@ -5,15 +5,18 @@ import styled from 'styled-components';
 
 const HeroCarousel: React.FC = () => {
   const texts = [
-    'One line text for image 1',
-    'One line text for image 2',
-    'One line text for image 3',
+    {
+      title: 'Discover our new collection',
+      description: 'One line text for image 1',
+    },
+    { title: 'Title for image 2', description: 'One line text for image 2' },
+    { title: 'Title for image 3', description: 'One line text for image 3' },
   ];
   const images = [
     // image1,
     'https://images.pexels.com/photos/1848662/pexels-photo-1848662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    'https://example.com/image2.jpg',
-    'https://example.com/image3.jpg',
+    'https://images.pexels.com/photos/1848662/pexels-photo-1848662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    'https://images.pexels.com/photos/1848662/pexels-photo-1848662.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
   ];
 
   const responsive = {
@@ -43,9 +46,23 @@ const HeroCarousel: React.FC = () => {
         >
           {images.map((image, index) => (
             <CarouselItem key={image}>
+              {/* <div style={{}}> */}
+              <h2
+                style={{
+                  position: 'absolute',
+                  paddingBottom: '20rem',
+                  fontSize: '3.5rem',
+                  letterSpacing: '.4rem',
+                  width: '40%',
+                  textAlign: 'left',
+                }}
+              >
+                {texts[index].title}
+              </h2>
+              {/* </div> */}
               <CarouselImage src={image} alt="Hero image" />
               <CallToAction>
-                <p>{texts[index]}</p>
+                <p>{texts[index].description}</p>
                 <CallToActionButton>Call to Action</CallToActionButton>
               </CallToAction>
             </CarouselItem>
@@ -61,7 +78,6 @@ const CarouselContainer = styled.div`
 `;
 
 const CarouselItem = styled.div`
-  top: 4rem;
   left: 0;
   width: 100%;
   height: 100%;
@@ -76,12 +92,14 @@ const CarouselItem = styled.div`
   &:before {
     content: '';
     position: absolute;
-    top: 50%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 40%;
+    height: 25%;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 2%;
   }
 `;
 
@@ -90,11 +108,12 @@ const CarouselImage = styled.img`
   height: 85vh;
   object-fit: cover;
   z-index: -1;
+  opacity: 0.8;
 `;
 
 const CallToAction = styled.div`
   position: absolute;
-  top: 50%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
