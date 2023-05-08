@@ -46,7 +46,6 @@ const HeroCarousel: React.FC = () => {
         >
           {images.map((image, index) => (
             <CarouselItem key={image}>
-              {/* <div style={{}}> */}
               <h2
                 style={{
                   position: 'absolute',
@@ -59,7 +58,7 @@ const HeroCarousel: React.FC = () => {
               >
                 {texts[index].title}
               </h2>
-              {/* </div> */}
+
               <CarouselImage src={image} alt="Hero image" />
               <CallToAction>
                 <p>{texts[index].description}</p>
