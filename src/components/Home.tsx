@@ -9,8 +9,8 @@ const Home = () => {
       <HeroCarousel />
       <Gallery />
       <Banner
-        imageUrl="https://images.pexels.com/photos/10679171/pexels-photo-10679171.jpeg?auto=compress&cs=tinysrgb&w=800"
-        ctaText="Shop now"
+        imageUrl="https://s7d9.scene7.com/is/image/Aritzia/su23-wk4-05-03-hp-slot2-ca?wid=1500"
+        ctaText="shop new"
         ctaLink="https://example.com/shop"
       />
     </div>
