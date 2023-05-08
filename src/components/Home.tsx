@@ -3,6 +3,8 @@ import Gallery from './Gallery';
 import HeroCarousel from './Hero';
 import Banner from './Banner';
 import HeroCarouselA from './Hero-A';
+import CarouselComponent from './Carousel';
+import { items } from './assets/assets';
 
 const Home = () => {
   return (
@@ -14,6 +16,7 @@ const Home = () => {
         ctaText="shop new"
         ctaLink="https://example.com/shop"
       />
+      <CarouselComponent items={items} />;
     </div>
   );
 };

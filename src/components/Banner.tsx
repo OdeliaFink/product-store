@@ -10,14 +10,13 @@ interface BannerProps {
 const Banner: React.FC<BannerProps> = ({ imageUrl, ctaText, ctaLink }) => {
   return (
     <BannerContainer>
-      <BannerImage imageUrl={imageUrl}>
-        <CTALink href={ctaLink}>{ctaText}</CTALink>
-      </BannerImage>
+      <BannerImage imageUrl={imageUrl}></BannerImage>
       <BannerContent>
         <BannerText>
           a bunch of styles you've never seen before. maybe introduce yourself.
           more arriving daily.
         </BannerText>
+        <CTALink href={ctaLink}>{ctaText}</CTALink>
       </BannerContent>
     </BannerContainer>
   );
@@ -43,20 +42,19 @@ const BannerImage = styled.div<{ imageUrl: string }>`
 `;
 
 const CTALink = styled.a`
-  background-color: grey;
-  color: #fff;
-  padding: 1.5rem 2rem;
+  color: black;
+  font-weight: 400;
+  padding: 1.5rem 0rem;
   border-radius: 5px;
   font-size: 1.5rem;
-  font-weight: bold;
-  text-decoration: none;
-  position: absolute;
+
+  text-decoration: underline;
+
   bottom: 5rem;
   opacity: 0.8;
 
   &:hover {
-    background-color: grey;
-    opacity: 1;
+    cursor: pointer;
   }
 `;
 
