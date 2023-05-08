@@ -56,6 +56,7 @@ const CTALink = styled.a`
 
   &:hover {
     background-color: grey;
+    opacity: 1;
   }
 `;
 
