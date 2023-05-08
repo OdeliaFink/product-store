@@ -60,6 +60,7 @@ const CTALink = styled.a`
 
 const BannerContent = styled.div`
   width: 40%;
+  padding-left: 4rem;
   font-size: 3.5rem;
   font-weight: 200;
   padding-top: 8rem;
