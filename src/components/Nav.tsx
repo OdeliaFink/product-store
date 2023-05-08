@@ -4,10 +4,11 @@ import styled from 'styled-components';
 
 const NavbarContainer = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: #333;
+  background-color: white;
   color: #fff;
 
   @media (max-width: 768px) {
@@ -24,7 +25,6 @@ const Logo = styled.img`
 const NavLinks = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 250px;
 
   @media (max-width: 768px) {
     padding-top: 1rem;
@@ -34,9 +34,10 @@ const NavLinks = styled.div`
 
 const NavLink = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: black;
   margin-left: 1rem;
   display: flex;
+  padding-left: 5rem;
 
   @media (max-width: 768px) {
     justify-content: flex-end;
@@ -51,7 +52,9 @@ const Navbar = () => {
       </NavLink>
       <NavLinks>
         {/* <NavLink to="/">Home</NavLink> */}
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/about">about</NavLink>
+        <NavLink to="/shop">shop</NavLink>
+        <NavLink to="/faq">faq</NavLink>
       </NavLinks>
     </NavbarContainer>
   );

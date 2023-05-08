@@ -43,7 +43,7 @@ const GalleryItem: React.FC<GalleryItemProps> = ({
 }) => {
   return (
     <GridItem>
-      <img />
+      <img alt="gallery-item" />
       <Title>{title}</Title>
       <Description>{description}</Description>
       <Price>{price}</Price>
