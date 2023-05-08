@@ -30,11 +30,35 @@ const HeroCarouselA: React.FC = () => {
               type="video/mp4"
             />
           </CarouselVideo>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              position: 'absolute',
+              bottom: '15rem',
+              justifyContent: 'space-between',
+            }}
+          >
+            <CtaAnchorLink>shop now</CtaAnchorLink>
+            <CtaAnchorLink>view the campaign</CtaAnchorLink>
+          </div>
         </CarouselItem>
       </CarouselContainer>
     </div>
   );
 };
+
+const CtaAnchorLink = styled.a`
+  margin-inline: 3rem;
+
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: underline;
+
+  :hover {
+    cursor: pointer;
+  }
+`;
 
 const CarouselContainer = styled.div`
   overflow-x: hidden;
