@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 const NavbarContainer = styled.nav`
   display: flex;
-  justify-content: center;
+
   flex-direction: column;
-  align-items: center;
-  padding: 1rem;
+
+  padding: 3rem;
   background-color: white;
   color: #fff;
 
@@ -19,7 +19,7 @@ const NavbarContainer = styled.nav`
 
 const Logo = styled.img`
   height: 50px;
-  width: 50px;
+  width: 17%;
 `;
 
 const NavLinks = styled.div`
@@ -37,7 +37,17 @@ const NavLink = styled(Link)`
   color: black;
   margin-left: 1rem;
   display: flex;
-  padding-left: 5rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+
+  &.sale-link {
+    color: red;
+    font-weight: 500;
+  }
+
+  :hover {
+    text-decoration: underline;
+  }
 
   @media (max-width: 768px) {
     justify-content: flex-end;
@@ -48,14 +58,20 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <NavLink to="/">
-        <Logo src="logo.png" />
+        <Logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Aritzia_logo_%282017%29.svg/1280px-Aritzia_logo_%282017%29.svg.png" />
       </NavLink>
-      <NavLinks>
-        {/* <NavLink to="/">Home</NavLink> */}
-        <NavLink to="/about">about</NavLink>
-        <NavLink to="/shop">shop</NavLink>
-        <NavLink to="/faq">faq</NavLink>
-      </NavLinks>
+      <div style={{ width: '40%', paddingTop: '1rem' }}>
+        <NavLinks>
+          <NavLink to="/about">about</NavLink>
+          <NavLink to="/shop">shop</NavLink>
+          <NavLink to="/faq">faq</NavLink>
+          <NavLink to="/brands">brands</NavLink>
+          <NavLink to="/stories">stories</NavLink>
+          <NavLink to="/sale" className="sale-link">
+            sale
+          </NavLink>
+        </NavLinks>
+      </div>
     </NavbarContainer>
   );
 };
