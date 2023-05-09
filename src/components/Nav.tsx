@@ -1,32 +1,42 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FaSearch, FaShoppingBag, FaBookmark, FaUser } from 'react-icons/fa';
+
+interface NavProps {
+  isVisible: any;
+}
 
 const NavbarContainer = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  padding: 3rem;
-
+  position: fixed;
+  padding: 1rem;
+  width: 100%;
   background-color: white;
   color: #fff;
-
+  z-index: 20;
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: flex-end;
   }
 `;
 
-const Logo = styled.img`
+const Logo = styled.img<{ isVisible: any }>`
   height: 50px;
   width: 60%;
+  opacity: ${(props) => (props.isVisible ? '1' : '0')};
+  transition: opacity 0.3s ease-in-out;
 `;
 
-const NavLinks = styled.div`
+const NavLinks = styled.div<NavProps>`
   display: flex;
   justify-content: space-between;
+  position: ${(props) => (props.isVisible ? 'static' : 'absolute')};
+  top: ${(props) => (props.isVisible ? 'auto' : '50%')};
+  transform: ${(props) => (props.isVisible ? 'none' : 'translateY(-50%)')};
+  transition: all 0.3s ease-in-out;
 
   @media (max-width: 768px) {
     padding-top: 1rem;
@@ -91,14 +101,33 @@ const AccountIcon = styled(FaUser)`
 `;
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <NavbarContainer>
       <div style={{ paddingTop: '3rem' }}>
         <NavLink to="/">
-          <Logo src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Aritzia_logo_%282017%29.svg/1280px-Aritzia_logo_%282017%29.svg.png" />
+          <Logo
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Aritzia_logo_%282017%29.svg/1280px-Aritzia_logo_%282017%29.svg.png"
+            isVisible={!isScrolled}
+          />
         </NavLink>
         <div style={{ width: '40%', paddingTop: '1rem' }}>
-          <NavLinks>
+          <NavLinks isVisible={!isScrolled}>
             <NavLink to="/about">about</NavLink>
             <NavLink to="/shop">shop</NavLink>
             <NavLink to="/faq">faq</NavLink>
@@ -116,7 +145,7 @@ const Navbar = () => {
           alignItems: 'center',
           width: '30%',
           justifyContent: 'flex-end',
-          paddingBottom: '5rem',
+          paddingBottom: '3rem',
         }}
       >
         <IconContainer>
