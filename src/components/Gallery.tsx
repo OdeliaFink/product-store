@@ -6,7 +6,6 @@ const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 22rem);
   grid-gap: 80px;
-  padding-block: 1rem;
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -18,6 +17,9 @@ const Gallery = () => {
 
   return (
     <div style={{}}>
+      <div style={{ paddingLeft: '4rem', paddingTop: '2rem' }}>
+        <h2 style={{ fontWeight: '400' }}>TRENDING NOW</h2>
+      </div>
       <GridContainer>
         <div style={{ padding: '2rem' }}>
           <GalleryItem

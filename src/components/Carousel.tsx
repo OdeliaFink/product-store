@@ -82,7 +82,7 @@ const CarouselComponent: React.FC<CarouselProps> = ({ items }) => {
         <StyledCarouselItemWrapper key={index}>
           <StyledCarouselItemInner>
             <StyledCarouselImage src={item.image} alt={item.title} />
-            <p>{item.title}</p>
+            <a style={{ textDecoration: 'underline' }}>{item.title}</a>
           </StyledCarouselItemInner>
         </StyledCarouselItemWrapper>
       ))}
