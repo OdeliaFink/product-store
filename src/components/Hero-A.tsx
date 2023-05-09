@@ -26,7 +26,7 @@ const HeroCarouselA: React.FC = () => {
 
           <CarouselVideo autoPlay>
             <source
-              src="https://s7d9.scene7.com/is/content/Aritzia/Content/2023/01-Day-To-Day/01-homepage/05-01-2023/su23-wk4-05-01-hp-main.mp4"
+              src="https://s7d9.scene7.com/is/content/Aritzia/Content/2023/01-Day-To-Day/01-homepage/05-08-2023/su23-wk5-05-08-hp-main.mp4"
               type="video/mp4"
             />
           </CarouselVideo>
