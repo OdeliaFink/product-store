@@ -67,26 +67,32 @@ const StyledCarouselImage = styled.img`
 
 const CarouselComponent: React.FC<CarouselProps> = ({ items }) => {
   return (
-    <StyledCarousel
-      swipeable={true}
-      draggable={true}
-      responsive={responsive}
-      infinite={true}
-      autoPlaySpeed={1000}
-      keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={500}
-      containerClass="carousel-container"
-    >
-      {items.map((item, index) => (
-        <StyledCarouselItemWrapper key={index}>
-          <StyledCarouselItemInner>
-            <StyledCarouselImage src={item.image} alt={item.title} />
-            <a style={{ textDecoration: 'underline' }}>{item.title}</a>
-          </StyledCarouselItemInner>
-        </StyledCarouselItemWrapper>
-      ))}
-    </StyledCarousel>
+    <>
+      <div style={{ paddingLeft: '2rem' }}>
+        <h1 style={{ fontWeight: '300' }}>shop by category</h1>
+      </div>
+
+      <StyledCarousel
+        swipeable={true}
+        draggable={true}
+        responsive={responsive}
+        infinite={true}
+        autoPlaySpeed={1000}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="carousel-container"
+      >
+        {items.map((item, index) => (
+          <StyledCarouselItemWrapper key={index}>
+            <StyledCarouselItemInner>
+              <StyledCarouselImage src={item.image} alt={item.title} />
+              <a style={{ textDecoration: 'underline' }}>{item.title}</a>
+            </StyledCarouselItemInner>
+          </StyledCarouselItemWrapper>
+        ))}
+      </StyledCarousel>
+    </>
   );
 };
 
