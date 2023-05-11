@@ -14,7 +14,7 @@ const Stories: React.FC<StoriesProps> = ({ images, headings, ctaUrl }) => {
         <Column key={index}>
           <Image src={image} />
           <Heading>{headings[index]}</Heading>
-          <a style={{}}>{ctaUrl[index]}</a>
+          <CtaUrlLink>{ctaUrl[index]}</CtaUrlLink>
         </Column>
       ))}
     </Container>
@@ -23,13 +23,22 @@ const Stories: React.FC<StoriesProps> = ({ images, headings, ctaUrl }) => {
 
 export default Stories;
 
+export const CtaUrlLink = styled.a`
+  text-decoration: underline;
+  font-size: 1.3rem;
+
+  :hover {
+    cursor: pointer;
+  }
+`;
+
 const Container = styled.div`
   display: flex;
 `;
 
 const Column = styled.div`
   flex: 1;
-  padding: 16px;
+  padding: 10px;
 `;
 
 const Image = styled.img`
@@ -41,5 +50,5 @@ const Image = styled.img`
 const Heading = styled.h2`
   margin-top: 16px;
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 400;
 `;
