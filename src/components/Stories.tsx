@@ -10,7 +10,7 @@ interface StoriesProps {
 const Stories: React.FC<StoriesProps> = ({ images, headings, ctaUrl }) => {
   return (
     <>
-      <StoriesHeading>Stories</StoriesHeading>
+      <StoriesHeading>STORIES</StoriesHeading>
       <Container>
         {images?.map((image, index) => (
           <Column key={index}>
@@ -27,9 +27,9 @@ const Stories: React.FC<StoriesProps> = ({ images, headings, ctaUrl }) => {
 export default Stories;
 
 const StoriesHeading = styled.h2`
-  font-size: 1.5rem;
-  font-weight: 200;
-  padding-left: 2.3rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-left: 3rem;
 `;
 
 export const CtaUrlLink = styled.a`
