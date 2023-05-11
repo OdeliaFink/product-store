@@ -20,7 +20,10 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/about" element={<Shop />} />
           <Route path="/brands" element={<Brands />} />
-          <Route path="/stories" element={<Stories />} />
+          <Route
+            path="/stories"
+            element={<Stories headings={[]} ctaUrl={[]} />}
+          />
           <Route path="/sale" element={<Sale />} />
           <Route path="/faq" element={<Faq />} />
         </Routes>
