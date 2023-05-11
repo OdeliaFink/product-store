@@ -16,7 +16,7 @@ const Gallery = () => {
   // const GalleryItem = React.lazy(() => import('./GalleryItem'));
 
   return (
-    <div style={{}}>
+    <div style={{ flex: '1' }}>
       <div style={{ paddingLeft: '4rem', paddingTop: '2rem' }}>
         <h2 style={{ fontWeight: '400' }}>TRENDING NOW</h2>
       </div>

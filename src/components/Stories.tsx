@@ -9,19 +9,28 @@ interface StoriesProps {
 
 const Stories: React.FC<StoriesProps> = ({ images, headings, ctaUrl }) => {
   return (
-    <Container>
-      {images?.map((image, index) => (
-        <Column key={index}>
-          <Image src={image} />
-          <Heading>{headings[index]}</Heading>
-          <CtaUrlLink>{ctaUrl[index]}</CtaUrlLink>
-        </Column>
-      ))}
-    </Container>
+    <>
+      <StoriesHeading>Stories</StoriesHeading>
+      <Container>
+        {images?.map((image, index) => (
+          <Column key={index}>
+            <Image src={image} />
+            <Heading>{headings[index]}</Heading>
+            <CtaUrlLink>{ctaUrl[index]}</CtaUrlLink>
+          </Column>
+        ))}
+      </Container>
+    </>
   );
 };
 
 export default Stories;
+
+const StoriesHeading = styled.h2`
+  font-size: 1.5rem;
+  font-weight: 200;
+  padding-left: 2.3rem;
+`;
 
 export const CtaUrlLink = styled.a`
   text-decoration: underline;
@@ -34,6 +43,7 @@ export const CtaUrlLink = styled.a`
 
 const Container = styled.div`
   display: flex;
+  margin-inline: 2rem;
 `;
 
 const Column = styled.div`
