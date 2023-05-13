@@ -6,6 +6,7 @@ import HeroCarouselA from './Hero-A';
 import CarouselComponent from './Carousel';
 import { items } from './assets/assets';
 import Stories from './Stories';
+import ThreeColumnBanner from './ColumnBanner';
 
 const Home = () => {
   return (
@@ -34,6 +35,16 @@ const Home = () => {
           'View the Campaign',
           'View the Campaign',
         ]}
+      />
+      <ThreeColumnBanner
+        headings={['Column 1 Heading', 'Column 2 Heading', 'Column 3 Heading']}
+        icons={['fa fa-star', 'fa fa-heart', 'fa fa-thumbs-up']}
+        paragraphs={[
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        ]}
+        links={['#', '#', '#']}
       />
     </div>
   );

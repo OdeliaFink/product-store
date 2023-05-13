@@ -11,7 +11,6 @@ const HeroCarouselA: React.FC = () => {
           <h2
             style={{
               position: 'absolute',
-
               fontSize: '3rem',
               color: 'white',
               width: '40%',
