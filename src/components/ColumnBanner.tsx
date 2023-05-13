@@ -25,8 +25,8 @@ const ThreeColumnBanner: React.FC<ThreeColumnBannerProps> = ({
             <Paragraph>{paragraphs[0]}</Paragraph>
             <Link href={links[0]}>Learn More</Link>
           </Column>
+          <VerticalDivider />
 
-          <Divider />
           <Column>
             <Heading>
               <Icon className={icons[1]} /> {headings[1]}
@@ -34,7 +34,7 @@ const ThreeColumnBanner: React.FC<ThreeColumnBannerProps> = ({
             <Paragraph>{paragraphs[1]}</Paragraph>
             <Link href={links[1]}>Learn More</Link>
           </Column>
-          <Divider />
+          <VerticalDivider />
           <Column>
             <Heading>
               <Icon className={icons[2]} /> {headings[2]}
@@ -57,7 +57,7 @@ const Container = styled.div`
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   width: 100%;
-  padding-block: 3rem;
+  padding-block: 0.5rem;
 `;
 
 const Column = styled.div`
@@ -90,4 +90,8 @@ const Link = styled.a`
 const Divider = styled.div`
   border-left: 1px solid black;
   height: 80%;
+`;
+const VerticalDivider = styled.div`
+  border: 1px solid black;
+  height: 10rem;
 `;
