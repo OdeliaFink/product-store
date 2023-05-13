@@ -37,12 +37,17 @@ const Home = () => {
         ]}
       />
       <ThreeColumnBanner
-        headings={['Column 1 Heading', 'Column 2 Heading', 'Column 3 Heading']}
-        icons={['fa fa-star', 'fa fa-heart', 'fa fa-thumbs-up']}
+        headings={[
+          'Free Shipping',
+          'Find in Store',
+          'Home Delivery',
+          'Easy Returns',
+        ]}
         paragraphs={[
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-          'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+          'Free shipping on all orders over $50.',
+          'See something you love? Check Store Inventory to find in your local boutique.',
+          'We’re happy to deliver any in-store item directly to your home.',
+          'Changed your mind? Easily return your purchase in-store or via mail.',
         ]}
         links={['#', '#', '#']}
       />

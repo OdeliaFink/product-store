@@ -4,14 +4,14 @@ import styled from 'styled-components';
 
 interface ThreeColumnBannerProps {
   headings: string[];
-  icons: string[];
+
   paragraphs: string[];
   links: string[];
 }
 
 const ThreeColumnBanner: React.FC<ThreeColumnBannerProps> = ({
   headings,
-  icons,
+
   paragraphs,
   links,
 }) => {
@@ -41,15 +41,15 @@ const ThreeColumnBanner: React.FC<ThreeColumnBannerProps> = ({
               <FaStar style={{ paddingRight: '.8rem' }} /> {headings[2]}
             </Heading>
             <Paragraph>{paragraphs[2]}</Paragraph>
-            <Link href={links[2]}>Learn More</Link>
+            <Link href={links[2]}>Find a boutique</Link>
           </Column>
           <VerticalDivider />
           <Column>
             <Heading>
               <FaStar style={{ paddingRight: '.8rem' }} /> {headings[2]}
             </Heading>
-            <Paragraph>{paragraphs[2]}</Paragraph>
-            <Link href={links[2]}>Learn More</Link>
+            <Paragraph>{paragraphs[3]}</Paragraph>
+            <Link href={links[3]}>Learn More</Link>
           </Column>
         </Container>
       </div>
@@ -82,6 +82,7 @@ const Heading = styled.h2`
   justify-content: flex-start;
   font-size: 1.3rem;
   font-weight: 200;
+  padding-bottom: 4rem;
 `;
 
 const Icon = styled.i`
@@ -91,6 +92,7 @@ const Icon = styled.i`
 const Paragraph = styled.p`
   margin-bottom: 1rem;
   width: 70%;
+  padding-bottom: 1rem;
 `;
 
 const Link = styled.a`
