@@ -5,37 +5,35 @@ import styled from 'styled-components';
 
 const HeroCarouselA: React.FC = () => {
   return (
-    <div style={{ overflowX: 'hidden', overflowY: 'hidden' }}>
-      <CarouselContainer>
-        <CarouselItem>
-          <h2
-            style={{
-              position: 'absolute',
-              fontSize: '3rem',
-              color: 'white',
-              width: '40%',
-              textAlign: 'center',
-              fontWeight: '400',
-            }}
-          >
-            Sunday Best <br />
-            The Summer 23 <br />
-            Collection It's daydream season.
-          </h2>
+    <CarouselContainer>
+      <CarouselItem>
+        <h2
+          style={{
+            position: 'absolute',
+            fontSize: '3rem',
+            color: 'white',
+            width: '40%',
+            textAlign: 'center',
+            fontWeight: '400',
+          }}
+        >
+          Sunday Best <br />
+          The Summer 23 <br />
+          Collection It's daydream season.
+        </h2>
 
-          <CarouselVideo autoPlay>
-            <source
-              src="https://s7d9.scene7.com/is/content/Aritzia/Content/2023/01-Day-To-Day/01-homepage/05-08-2023/su23-wk5-05-08-hp-main.mp4"
-              type="video/mp4"
-            />
-          </CarouselVideo>
-          <CtaAnchorLinkContainer>
-            <CtaAnchorLink>shop now</CtaAnchorLink>
-            <CtaAnchorLink>view the campaign</CtaAnchorLink>
-          </CtaAnchorLinkContainer>
-        </CarouselItem>
-      </CarouselContainer>
-    </div>
+        <CarouselVideo autoPlay>
+          <source
+            src="https://s7d9.scene7.com/is/content/Aritzia/Content/2023/01-Day-To-Day/01-homepage/05-08-2023/su23-wk5-05-08-hp-main.mp4"
+            type="video/mp4"
+          />
+        </CarouselVideo>
+        <CtaAnchorLinkContainer>
+          <CtaAnchorLink>shop now</CtaAnchorLink>
+          <CtaAnchorLink>view the campaign</CtaAnchorLink>
+        </CtaAnchorLinkContainer>
+      </CarouselItem>
+    </CarouselContainer>
   );
 };
 
@@ -43,7 +41,7 @@ const CtaAnchorLinkContainer = styled.div`
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: 13rem;
+  bottom: 26rem;
   justify-content: space-between;
 `;
 
@@ -82,7 +80,7 @@ const CarouselVideo = styled.video.attrs({
   loop: true,
 })`
   width: 100%;
-  height: 90vh;
+  height: 140vh;
   object-fit: cover;
   z-index: -1;
   opacity: 0.8;

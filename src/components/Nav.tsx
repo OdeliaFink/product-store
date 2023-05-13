@@ -20,6 +20,7 @@ const NavbarContainer = styled.nav`
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
   }
 `;
 
@@ -62,7 +63,6 @@ const NavLink = styled(Link)`
   }
 
   @media (max-width: 768px) {
-    justify-content: flex-end;
   }
 `;
 
@@ -98,6 +98,17 @@ const BookmarkIcon = styled(FaBookmark)`
 
 const AccountIcon = styled(FaUser)`
   margin-right: 1rem;
+`;
+
+const BottomBarContainer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 30%;
+  padding-bottom: 3rem;
+
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+  }
 `;
 
 const Navbar = () => {
@@ -139,15 +150,7 @@ const Navbar = () => {
           </NavLinks>
         </div>
       </div>
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          width: '30%',
-          justifyContent: 'flex-end',
-          paddingBottom: '3rem',
-        }}
-      >
+      <BottomBarContainer>
         <IconContainer>
           <div
             style={{
@@ -163,7 +166,7 @@ const Navbar = () => {
           <BookmarkIcon size={20} color="black" />
           <AccountIcon size={20} color="black" />
         </IconContainer>
-      </div>
+      </BottomBarContainer>
     </NavbarContainer>
   );
 };
