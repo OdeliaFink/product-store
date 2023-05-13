@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaStar } from 'react-icons/fa';
 import styled from 'styled-components';
 
 interface ThreeColumnBannerProps {
@@ -20,7 +21,7 @@ const ThreeColumnBanner: React.FC<ThreeColumnBannerProps> = ({
         <Container>
           <Column>
             <Heading>
-              <Icon className={icons[0]} /> {headings[0]}
+              <FaStar style={{ paddingRight: '.8rem' }} /> {headings[0]}
             </Heading>
             <Paragraph>{paragraphs[0]}</Paragraph>
             <Link href={links[0]}>Learn More</Link>
@@ -29,7 +30,7 @@ const ThreeColumnBanner: React.FC<ThreeColumnBannerProps> = ({
 
           <Column>
             <Heading>
-              <Icon className={icons[1]} /> {headings[1]}
+              <FaStar style={{ paddingRight: '.8rem' }} /> {headings[1]}
             </Heading>
             <Paragraph>{paragraphs[1]}</Paragraph>
             <Link href={links[1]}>Learn More</Link>
@@ -37,7 +38,15 @@ const ThreeColumnBanner: React.FC<ThreeColumnBannerProps> = ({
           <VerticalDivider />
           <Column>
             <Heading>
-              <Icon className={icons[2]} /> {headings[2]}
+              <FaStar style={{ paddingRight: '.8rem' }} /> {headings[2]}
+            </Heading>
+            <Paragraph>{paragraphs[2]}</Paragraph>
+            <Link href={links[2]}>Learn More</Link>
+          </Column>
+          <VerticalDivider />
+          <Column>
+            <Heading>
+              <FaStar style={{ paddingRight: '.8rem' }} /> {headings[2]}
             </Heading>
             <Paragraph>{paragraphs[2]}</Paragraph>
             <Link href={links[2]}>Learn More</Link>
@@ -62,15 +71,17 @@ const Container = styled.div`
 
 const Column = styled.div`
   width: 30%;
-  padding: 1rem;
-  text-align: center;
+
+  text-align: left;
+  padding-left: 3rem;
 `;
 
 const Heading = styled.h2`
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 1.5rem;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+  font-weight: 200;
 `;
 
 const Icon = styled.i`
@@ -79,19 +90,17 @@ const Icon = styled.i`
 
 const Paragraph = styled.p`
   margin-bottom: 1rem;
+  width: 70%;
 `;
 
 const Link = styled.a`
-  text-decoration: none;
-  color: blue;
-  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+  font-weight: 300;
+  cursor: pointer;
 `;
 
-const Divider = styled.div`
-  border-left: 1px solid black;
-  height: 80%;
-`;
 const VerticalDivider = styled.div`
-  border: 1px solid black;
+  border: 1px solid grey;
   height: 10rem;
 `;
