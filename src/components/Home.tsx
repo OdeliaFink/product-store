@@ -10,7 +10,7 @@ import ThreeColumnBanner from './ColumnBanner';
 
 const Home = () => {
   return (
-    <div style={{ padding: '0rem' }}>
+    <div >
       <HeroCarouselA />
       <CarouselComponent items={items} />;
       <Banner
