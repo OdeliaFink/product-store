@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
     <Container>
       <Text>
         &copy; {year} {companyName}. All rights reserved. | Designed by{' '}
-        <Link href="https://yourdesigner.com">Your Designer</Link>
+        <Link href="https://yourdesigner.com">Aritzia</Link>
       </Text>
     </Container>
   );
