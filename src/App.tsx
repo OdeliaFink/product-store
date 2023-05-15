@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/faq" element={<Faq />} />
         </Routes>
       </Router>
-      <Footer companyName={''} year={0} />
+      <Footer companyName={''} year={2023} />
     </div>
   );
 };
