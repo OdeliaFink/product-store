@@ -6,6 +6,8 @@ const Container = styled.footer`
   color: #fff;
   padding: 20px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 
   bottom: 0;
   width: 100%;
@@ -32,45 +34,66 @@ type FooterProps = {
 
 const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
   return (
-    <Container>
-      <div style={{ display: 'flex', flexDirection: 'column' }}>
-        <div style={{ textAlign: 'left' }}>
-          <h6 style={{ fontSize: '1rem', fontWeight: '300', color: 'grey' }}>
-            JOIN ARITZIA'S MAILING LIST
-          </h6>
-          <h6 style={{ fontSize: '1', fontWeight: '200' }}>
-            Insider info on sales, new arrivals and more good stuff.
-          </h6>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name.."
-          />
-        </div>
-        <div style={{ textAlign: 'left' }}>
-          <h6 style={{ fontSize: '1rem', fontWeight: '300', color: 'grey' }}>
-            ARITZIA RESEARCH COMMUNITY
-          </h6>
-          <h6 style={{ fontSize: '1', fontWeight: '200' }}>
-            Join the Aritzia Research Community for a chance to provide valued
-            feedback and receive an Aritzia gift card in return. Interested?
-          </h6>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name.."
-          />
-        </div>
-      </div>
+    <>
       <div>
-        <Text>
-          &copy; {year} {companyName}. All rights reserved. | Designed by{' '}
-          <Link href="https://yourdesigner.com">Aritzia</Link>
-        </Text>
+        <Container>
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <div style={{ textAlign: 'left' }}>
+              <h6
+                style={{ fontSize: '1rem', fontWeight: '300', color: 'grey' }}
+              >
+                JOIN ARITZIA'S MAILING LIST
+              </h6>
+              <h6 style={{ fontSize: '1', fontWeight: '200' }}>
+                Insider info on sales, new arrivals and more good stuff.
+              </h6>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+            </div>
+            <div style={{ textAlign: 'left' }}>
+              <h6
+                style={{ fontSize: '1rem', fontWeight: '300', color: 'grey' }}
+              >
+                ARITZIA RESEARCH COMMUNITY
+              </h6>
+              <h6 style={{ fontSize: '1', fontWeight: '200' }}>
+                Join the Aritzia Research Community for a chance to provide
+                valued feedback and receive an Aritzia gift card in return.
+                Interested?
+              </h6>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Your name.."
+              />
+            </div>
+          </div>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'row',
+              alignItems: 'flex-start',
+              position: 'relative',
+              bottom: '7rem',
+            }}
+          >
+            <div>Column 1</div>
+            <div>Column 2</div>
+          </div>
+        </Container>
+        <div>
+          <Text>
+            &copy; {year} {companyName}. All rights reserved. | Designed by{' '}
+            <Link href="https://yourdesigner.com">Aritzia</Link>
+          </Text>
+        </div>
       </div>
-    </Container>
+    </>
   );
 };
 
