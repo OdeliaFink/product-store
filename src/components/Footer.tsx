@@ -50,10 +50,11 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
         </div>
         <div style={{ textAlign: 'left' }}>
           <h6 style={{ fontSize: '1rem', fontWeight: '300', color: 'grey' }}>
-            JOIN ARITZIA'S MAILING LIST
+            ARITZIA RESEARCH COMMUNITY
           </h6>
           <h6 style={{ fontSize: '1', fontWeight: '200' }}>
-            Insider info on sales, new arrivals and more good stuff.
+            Join the Aritzia Research Community for a chance to provide valued
+            feedback and receive an Aritzia gift card in return. Interested?
           </h6>
           <input
             type="text"
