@@ -9,7 +9,6 @@ const Container = styled.footer`
   text-align: center;
   display: flex;
   justify-content: space-between;
-
   bottom: 0;
   width: 100%;
   display: flex;
@@ -96,8 +95,22 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
               bottom: '7rem',
             }}
           >
-            <div>Column 1</div>
-            <div>Column 2</div>
+            <div>
+              <h6>Aritzia</h6>
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+              </ul>
+            </div>
+            <div>
+              <h6>Get Help</h6>
+              <ul>
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+              </ul>
+            </div>
           </div>
         </Container>
         <div>
