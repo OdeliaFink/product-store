@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Container = styled.footer`
   background-color: #222;
@@ -71,6 +72,19 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
                 name="firstname"
                 placeholder="Your name.."
               />
+            </div>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                marginInline: '8rem',
+                paddingBlock: '1rem',
+              }}
+            >
+              <FaFacebook />
+              <FaTwitter />
+              <FaInstagram />
             </div>
           </div>
           <div
