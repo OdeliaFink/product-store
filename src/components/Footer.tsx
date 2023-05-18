@@ -23,6 +23,7 @@ const Text = styled.p`
 
 const List = styled.ul`
   list-style: none;
+  text-align: left;
 `;
 
 const Link = styled.a`
