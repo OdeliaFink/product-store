@@ -98,7 +98,9 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
             <div>
               <h6>Aritzia</h6>
               <ul>
-                <li>Item 1</li>
+                <li>
+                  <a>About Us</a>
+                </li>
                 <li>Item 2</li>
                 <li>Item 3</li>
               </ul>
