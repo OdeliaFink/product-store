@@ -32,6 +32,11 @@ const Link = styled.a`
   font-weight: bold;
 `;
 
+const ColumnHeading = styled.h6`
+  font-size: 1.3rem;
+  font-weight: 400;
+`;
+
 type FooterProps = {
   companyName: string;
   year: number;
@@ -101,7 +106,7 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
             }}
           >
             <div>
-              <h6>Aritzia</h6>
+              <ColumnHeading>Aritzia</ColumnHeading>
               <List>
                 <li>
                   <a>About Us</a>
@@ -121,7 +126,7 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
               </List>
             </div>
             <div>
-              <h6>Get Help</h6>
+              <ColumnHeading>Get Help</ColumnHeading>
               <List>
                 <li>Contact Us</li>
                 <li>Shipping Guide</li>
