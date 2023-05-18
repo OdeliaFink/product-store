@@ -21,6 +21,10 @@ const Text = styled.p`
   margin: 0;
 `;
 
+const List = styled.ul`
+  list-style: none;
+`;
+
 const Link = styled.a`
   color: #fff;
   text-decoration: none;
@@ -97,7 +101,7 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
           >
             <div>
               <h6>Aritzia</h6>
-              <ul>
+              <List>
                 <li>
                   <a>About Us</a>
                 </li>
@@ -113,15 +117,15 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
                 <li>
                   <a>Gift Cards</a>
                 </li>
-              </ul>
+              </List>
             </div>
             <div>
               <h6>Get Help</h6>
-              <ul>
-                <li>Item A</li>
-                <li>Item B</li>
+              <List>
+                <li>Contact Us</li>
+                <li>Shipping Guide</li>
                 <li>Item C</li>
-              </ul>
+              </List>
             </div>
           </div>
         </Container>
