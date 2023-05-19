@@ -37,6 +37,14 @@ const ColumnHeading = styled.h6`
   font-weight: 400;
 `;
 
+const InputEmail = styled.input`
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 50%;
+  outline: none;
+`;
+
 type FooterProps = {
   companyName: string;
   year: number;
@@ -47,24 +55,30 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
     <>
       <div>
         <Container>
-          <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <div
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              marginInline: ' 12rem',
+            }}
+          >
             <div style={{ textAlign: 'left' }}>
               <h6
                 style={{ fontSize: '1rem', fontWeight: '300', color: 'grey' }}
               >
                 JOIN ARITZIA'S MAILING LIST
               </h6>
-              <h6 style={{ fontSize: '1', fontWeight: '200' }}>
+              <h6 style={{ fontSize: '1', fontWeight: '500' }}>
                 Insider info on sales, new arrivals and more good stuff.
               </h6>
-              <input
+              <InputEmail
                 type="text"
                 id="fname"
                 name="firstname"
                 placeholder="Your name.."
               />
             </div>
-            <div style={{ textAlign: 'left' }}>
+            <div style={{ textAlign: 'left', width: '40%' }}>
               <h6
                 style={{ fontSize: '1rem', fontWeight: '300', color: 'grey' }}
               >
@@ -86,14 +100,21 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
               style={{
                 display: 'flex',
                 flexDirection: 'row',
-                justifyContent: 'space-between',
-                marginInline: '8rem',
+                justifyContent: 'flex-start',
+                // marginInline: '8rem',
                 paddingBlock: '1rem',
               }}
             >
-              <FaFacebook />
-              <FaTwitter />
-              <FaInstagram />
+              <div>
+                <FaFacebook />
+              </div>
+              <div>
+                <FaTwitter />
+              </div>
+
+              <div>
+                <FaInstagram />
+              </div>
             </div>
           </div>
           <div
@@ -103,6 +124,7 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
               alignItems: 'flex-start',
               position: 'relative',
               bottom: '7rem',
+              marginRight: '16rem',
             }}
           >
             <div>
