@@ -82,7 +82,7 @@ const Heading = styled.h2`
   justify-content: flex-start;
   font-size: 1.3rem;
   font-weight: 200;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 `;
 
 const Icon = styled.i`

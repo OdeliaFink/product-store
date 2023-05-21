@@ -23,7 +23,13 @@ const Text = styled.p`
 
 const List = styled.ul`
   list-style: none;
+  padding: 0;
+  margin: 0;
   text-align: left;
+`;
+
+const ListItem = styled.li`
+  margin-bottom: 8px;
 `;
 
 const Link = styled.a`
@@ -32,9 +38,9 @@ const Link = styled.a`
   font-weight: bold;
 `;
 
-const ColumnHeading = styled.h6`
-  font-size: 1.3rem;
-  font-weight: 400;
+const ColumnHeading = styled.p`
+  font-size: 1.4rem;
+  font-weight: 500;
 `;
 
 const InputEmail = styled.input`
@@ -43,6 +49,12 @@ const InputEmail = styled.input`
   border-bottom: 1px solid white;
   width: 50%;
   outline: none;
+`;
+
+const FooterLinks = styled.a`
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 0.8rem;
 `;
 
 type FooterProps = {
@@ -60,6 +72,7 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
               display: 'flex',
               flexDirection: 'column',
               marginInline: ' 12rem',
+              marginRight: '0px',
             }}
           >
             <div style={{ textAlign: 'left' }}>
@@ -131,19 +144,19 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
               <ColumnHeading>Aritzia</ColumnHeading>
               <List>
                 <li>
-                  <a>About Us</a>
+                  <FooterLinks>About Us</FooterLinks>
                 </li>
                 <li>
-                  <a>Careers</a>
+                  <FooterLinks>Careers</FooterLinks>
                 </li>
                 <li>
-                  <a>Community</a>
+                  <FooterLinks>Community</FooterLinks>
                 </li>
                 <li>
-                  <a>Store Locator</a>
+                  <FooterLinks>Store Locator</FooterLinks>
                 </li>
                 <li>
-                  <a>Gift Cards</a>
+                  <FooterLinks>Gift Cards</FooterLinks>
                 </li>
               </List>
             </div>
