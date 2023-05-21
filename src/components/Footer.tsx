@@ -174,10 +174,10 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
           <Text>
             &copy; {year} {companyName} All rights reserved. | Designed by
             {' Aritzia LP'}
-            <Link href="https://yourdesigner.com">Privacy Policy</Link>
-            <Link href="https://yourdesigner.com">Manage Cookies</Link>
-            <Link href="https://yourdesigner.com">Terms of Use</Link>
-            <Link href="https://yourdesigner.com">Site Map</Link>
+            <Link href="#">Privacy Policy</Link>
+            <Link href="#">Manage Cookies</Link>
+            <Link href="#">Terms of Use</Link>
+            <Link href="#">Site Map</Link>
           </Text>
         </div>
       </div>

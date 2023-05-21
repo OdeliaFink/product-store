@@ -12,23 +12,21 @@ const GridItem = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  gap: 1;
 `;
 
 const DescriptionCta = styled.a`
   margin-bottom: 0;
   font-size: 1.2rem;
   cursor: pointer;
-
+  padding-left: 1rem;
   :hover {
     text-decoration: underline;
   }
 `;
 
 const Image = styled.img`
-  width: 50vh;
-  height: 70vh;
+  width: 100%;
+  height: 60vh;
 `;
 
 const GalleryItem: React.FC<GalleryItemProps> = ({
