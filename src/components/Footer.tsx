@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 const Container = styled.footer`
-  background-color: #222;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -19,6 +18,8 @@ const Container = styled.footer`
 const Text = styled.p`
   font-size: 16px;
   margin: 0;
+  color: white;
+  text-align: center;
 `;
 
 const List = styled.ul`
@@ -63,7 +64,7 @@ type FooterProps = {
 const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
   return (
     <>
-      <div>
+      <div style={{ backgroundColor: '#222' }}>
         <Container>
           <div
             style={{
@@ -170,8 +171,12 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
         </Container>
         <div>
           <Text>
-            &copy; {year} {companyName}. All rights reserved. | Designed by{' '}
-            <Link href="https://yourdesigner.com">Aritzia</Link>
+            &copy; {year} {companyName} All rights reserved. | Designed by
+            {'Aritzia LP'}
+            <Link href="https://yourdesigner.com">Privacy Policy</Link>
+            <Link href="https://yourdesigner.com">Manage Cookies</Link>
+            <Link href="https://yourdesigner.com">Terms of Use</Link>
+            <Link href="https://yourdesigner.com">Site Map</Link>
           </Text>
         </div>
       </div>
