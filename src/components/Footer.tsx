@@ -34,7 +34,8 @@ const List = styled.ul`
 const Link = styled.a`
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: light;
+  margin-inline: 1rem;
 `;
 
 const ColumnHeading = styled.p`
@@ -172,7 +173,7 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
         <div>
           <Text>
             &copy; {year} {companyName} All rights reserved. | Designed by
-            {'Aritzia LP'}
+            {' Aritzia LP'}
             <Link href="https://yourdesigner.com">Privacy Policy</Link>
             <Link href="https://yourdesigner.com">Manage Cookies</Link>
             <Link href="https://yourdesigner.com">Terms of Use</Link>
