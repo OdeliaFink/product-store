@@ -23,13 +23,11 @@ const Text = styled.p`
 
 const List = styled.ul`
   list-style: none;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0;
   text-align: left;
-`;
-
-const ListItem = styled.li`
-  margin-bottom: 8px;
 `;
 
 const Link = styled.a`
@@ -140,7 +138,7 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
               marginRight: '16rem',
             }}
           >
-            <div>
+            <div style={{ marginRight: '4rem' }}>
               <ColumnHeading>Aritzia</ColumnHeading>
               <List>
                 <li>
@@ -163,9 +161,9 @@ const Footer: React.FC<FooterProps> = ({ companyName, year }) => {
             <div>
               <ColumnHeading>Get Help</ColumnHeading>
               <List>
-                <li>Contact Us</li>
-                <li>Shipping Guide</li>
-                <li>Item C</li>
+                <FooterLinks>Contact Us</FooterLinks>
+                <FooterLinks>Shipping Guide</FooterLinks>
+                <FooterLinks>Item </FooterLinks>
               </List>
             </div>
           </div>
