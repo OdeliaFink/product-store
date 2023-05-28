@@ -20,7 +20,8 @@ const DescriptionCta = styled.a`
   cursor: pointer;
   padding-left: 1rem;
   :hover {
-    text-decoration: underline;
+    text-decoration: line;
+    border: 1px solid grey;
   }
 `;
 
