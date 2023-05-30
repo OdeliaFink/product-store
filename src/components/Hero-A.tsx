@@ -38,17 +38,18 @@ const CarouselTitle = styled.h2`
 
   @media (max-width: 628px) {
     font-size: 1.9rem;
+    width: 80%;
   }
 `;
 const CtaAnchorLinkContainer = styled.div`
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: 3rem;
+  bottom: 19rem;
   justify-content: space-between;
 
   @media (max-width: 628px) {
-    bottom: 0rem;
+    bottom: 4rem;
   }
 `;
 
