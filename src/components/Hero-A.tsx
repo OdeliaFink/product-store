@@ -41,7 +41,7 @@ const CtaAnchorLinkContainer = styled.div`
   display: flex;
   flex-direction: row;
   position: absolute;
-  bottom: 26rem;
+  bottom: 3rem;
   justify-content: space-between;
 `;
 
