@@ -7,20 +7,11 @@ const HeroCarouselA: React.FC = () => {
   return (
     <CarouselContainer>
       <CarouselItem>
-        <h2
-          style={{
-            position: 'absolute',
-            fontSize: '3rem',
-            color: 'white',
-            width: '40%',
-            textAlign: 'center',
-            fontWeight: '400',
-          }}
-        >
+        <CarouselTitle>
           Sunday Best <br />
           The Summer 23 <br />
           Collection It's daydream season.
-        </h2>
+        </CarouselTitle>
 
         <CarouselVideo autoPlay>
           <source
@@ -37,7 +28,14 @@ const HeroCarouselA: React.FC = () => {
   );
 };
 
-const CarouselTitle = styled.h2``;
+const CarouselTitle = styled.h2`
+  position: absolute;
+  font-size: 3rem;
+  color: white;
+  width: 40%;
+  text-align: center;
+  font-weight: 400;
+`;
 const CtaAnchorLinkContainer = styled.div`
   display: flex;
   flex-direction: row;
