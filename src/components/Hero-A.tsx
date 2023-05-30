@@ -37,12 +37,17 @@ const HeroCarouselA: React.FC = () => {
   );
 };
 
+const CarouselTitle = styled.h2``;
 const CtaAnchorLinkContainer = styled.div`
   display: flex;
   flex-direction: row;
   position: absolute;
   bottom: 3rem;
   justify-content: space-between;
+
+  @media (max-width: 628px) {
+    bottom: 0rem;
+  }
 `;
 
 const CtaAnchorLink = styled.a`
