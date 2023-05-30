@@ -35,6 +35,10 @@ const CarouselTitle = styled.h2`
   width: 40%;
   text-align: center;
   font-weight: 400;
+
+  @media (max-width: 628px) {
+    font-size: 1.9rem;
+  }
 `;
 const CtaAnchorLinkContainer = styled.div`
   display: flex;
