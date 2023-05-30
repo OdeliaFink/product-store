@@ -36,8 +36,12 @@ const CarouselTitle = styled.h2`
   text-align: center;
   font-weight: 400;
 
-  @media (max-width: 628px) {
+  @media (max-width: 425px) {
     font-size: 1.9rem;
+    width: 80%;
+  }
+  @media (max-width: 768px) {
+    font-size: 2.3rem;
     width: 80%;
   }
 `;
@@ -48,8 +52,11 @@ const CtaAnchorLinkContainer = styled.div`
   bottom: 19rem;
   justify-content: space-between;
 
-  @media (max-width: 628px) {
-    bottom: 4rem;
+  @media (max-width: 425px) {
+    bottom: 6rem;
+  }
+  @media (max-width: 768px) {
+    bottom: 6rem;
   }
 `;
 
