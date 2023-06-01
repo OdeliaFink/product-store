@@ -71,6 +71,8 @@ const BannerContent = styled.div`
 
   @media (max-width: 769px) {
     padding-top: 0rem;
+    padding-left: 2rem;
+    font-size: 2rem;
   }
 `;
 
