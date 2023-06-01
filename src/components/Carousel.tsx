@@ -49,6 +49,10 @@ const StyledCarousel = styled(Carousel)`
 
 const StyledCarouselItemWrapper = styled.div`
   height: 30rem;
+
+  @media (max-width: 769px) {
+    height: auto;
+  }
 `;
 
 const StyledCarouselItemInner = styled.div`
@@ -57,6 +61,10 @@ const StyledCarouselItemInner = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 769px) {
+    height: 50%;
+  }
 `;
 
 const StyledCarouselImage = styled.img`

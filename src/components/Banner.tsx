@@ -26,6 +26,11 @@ const BannerContainer = styled.div`
   display: flex;
   margin-inline: 10rem;
   padding-block: 4rem;
+
+  @media (max-width: 769px) {
+    padding-block: 0rem;
+    margin-inline: 0rem;
+  }
 `;
 
 const BannerImage = styled.div<{ imageUrl: string }>`
