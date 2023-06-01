@@ -39,6 +39,10 @@ const BannerImage = styled.div<{ imageUrl: string }>`
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media (max-width: 769px) {
+    height: 24rem;
+  }
 `;
 
 const CTALink = styled.a`
@@ -64,6 +68,10 @@ const BannerContent = styled.div`
   font-size: 3.5rem;
   font-weight: 200;
   padding-top: 8rem;
+
+  @media (max-width: 769px) {
+    padding-top: 0rem;
+  }
 `;
 
 const BannerText = styled.p``;
