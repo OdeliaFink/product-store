@@ -13,6 +13,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Screenshots of Aritzia mockup homepage
 
-[Hero section](https://facebook.github.io/create-react-app/docs/getting-started).
+[Hero section](https://github.com/OdeliaFink/product-store/blob/master/src/components/assets/screenshots/homepage.png)
 
 To learn React, check out the [React documentation](https://reactjs.org/).
