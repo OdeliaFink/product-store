@@ -19,7 +19,7 @@ Trending: [Trending](https://github.com/OdeliaFink/product-store/blob/master/src
 
 Blog section: [Blog section](https://github.com/OdeliaFink/product-store/blob/master/src/components/assets/screenshots/blogs.png)
 
-Mid Section: [https://github.com/OdeliaFink/product-store/blob/master/src/components/assets/screenshots/mid-section.png](https://github.com/OdeliaFink/product-store/blob/master/src/components/assets/screenshots/mid-section.png)
+Mid Section: [Mid Section](https://github.com/OdeliaFink/product-store/blob/master/src/components/assets/screenshots/mid-section.png)
 
 Footer:[Footer](https://github.com/OdeliaFink/product-store/blob/master/src/components/assets/screenshots/footer.png)
 
